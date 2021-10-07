@@ -1,0 +1,4 @@
+jueves: Guardia a las 22
+Viernes: Tutorias
+Sabado: Grupo operativo a las 9
+Domingo--
