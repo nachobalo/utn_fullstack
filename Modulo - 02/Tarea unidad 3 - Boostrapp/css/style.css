@@ -1,0 +1,54 @@
+body {
+  background: linear-gradient(to bottom, #fdc84e 0%, #fcf1db 75%);
+}
+
+a:hover {
+  font-size: calc(110%);
+}
+
+img {
+  width: 100%;
+}
+
+section.card {
+  margin-top: 6rem;
+  border: none;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+.flash-pic {
+  max-width: 75%;
+}
+
+.list-unstyled a {
+  color: #cb2818;
+}
+
+.navbar {
+  background-color: #cb2818;
+}
+
+.navbar *,
+.navbar a:link,
+.navbar a:hover,
+.navbar a:visited,
+.navbar a:active {
+  color: #fdc84e;
+}
+
+.navbar-brand img {
+  width: 3rem;
+}
+
+#carouselExampleControls {
+  height: 400px;
+}
+
+@media screen and (min-width: 576px) {
+  .flash-pic {
+    max-width: 100%;
+  }
+}
