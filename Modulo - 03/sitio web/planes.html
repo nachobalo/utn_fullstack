@@ -34,11 +34,11 @@
             </div>
             <button class="navbar-toggle"><i class="fas fa-bars"></i></button>
             <ul class="navbar-menu">
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="servicios.html#staff">Cartilla Medica</a></li>
-                <li><a class="active" href="planes.html">Planes</a></li>
-                <li><a href="planes.html#cobertura">Cobertura</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a class="navbar-link" href="servicios.html">Servicios</a></li>
+                <li><a class="navbar-link" href="servicios.html#staff">Cartilla Medica</a></li>
+                <li><a class="navbar-link active" href="planes.html">Planes</a></li>
+                <li><a class="navbar-link" href="planes.html#cobertura">Cobertura</a></li>
+                <li><a class="navbar-link" href="contacto.html">Contacto</a></li>
             </ul>
 
         </nav>
@@ -105,6 +105,7 @@
                 <div>IOMA <br><small>Instituto Obra Médico Asistencial.</small></div>
                 <div>OSCHOCA <br><small>O.S. de Choferes de Camiones</small></div>
                 <div>OSDE</div>
+                <div>OSDOP <br><small>O.S. de Docentes Privados.</small></div>
                 <div>OSECAC <br><small>O.S. de Empleados de Comercio y Act. Civiles.</small> </div>
                 <div>OSMATA <br><small>O.S. de Mecánicos y Afines del Transporte Automor.</small></div>
                 <div>OSPe <br><small>O.s. de Petroleros.</small></div>
@@ -183,19 +184,7 @@
         <p>Este es un proyecto de formacion educativa </p>
     </footer>
 
-
-
-    <script>
-        $navBarToggle = document.querySelector(".navbar-toggle");
-        $navBarMenu = document.querySelector(".navbar-menu");
-
-        $navBarToggle.addEventListener('click', () => {
-            $navBarMenu.classList.toggle('navbar-menu-visible')
-        });
-
-
-
-    </script>
+    <script src="js/script.js"></script>
 
 </body>
 
