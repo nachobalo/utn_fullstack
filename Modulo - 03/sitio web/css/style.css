@@ -1,17 +1,16 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
 *::after,
 *::before {
   box-sizing: inherit;
-  padding: 0;
-  margin: 0;
 }
 
 :root {
-  --dark: #333;
+  --dark: #00001f;
   --white: #fff;
   --grey: #ccc;
   --royal-blue-dark: #00296b;
@@ -45,21 +44,12 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  font-size: 110%;
-}
-
 button,
 input[type="button"],
 input[type="submit"] {
   background-color: var(--royal-blue-dark);
   color: #fff;
   padding: 0.5rem 1rem;
-}
-
-input:focus-visible,
-textarea:focus-visible {
-  outline-color: var(--royal-blue-dark);
 }
 
 footer {
@@ -70,6 +60,11 @@ footer {
   color: #fff9;
   margin-top: 2rem;
   padding: 0.5rem;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+  outline-color: var(--royal-blue-dark);
 }
 
 h1,
@@ -143,9 +138,25 @@ ol {
 
 .container {
   max-width: 1200px;
-  background-color: #fff7;
+  background-color: #ffffffd9;
   margin: 0 auto;
   padding: 1rem;
+}
+
+.especialidad,
+.osociales span {
+  margin-bottom: 0.5rem;
+}
+
+.especialidad h4,
+.especialidad h5,
+.especialidad span {
+  margin: 0 0 0.25rem;
+}
+
+.especialidad span,
+.osociales span {
+  display: block;
 }
 
 .formulario,
@@ -271,6 +282,8 @@ ol {
   flex-direction: column;
   align-items: center;
   background-color: var(--dark-cornflower-blue);
+  margin: 0;
+  padding-left: 0;
   list-style: none;
 }
 
@@ -294,7 +307,8 @@ ol {
 }
 
 .navbar-menu a:hover,
-.navbar-menu a:active {
+.navbar-menu a:active,
+.navbar-menu .active {
   background-color: var(--royal-blue-dark);
 }
 
@@ -314,6 +328,14 @@ ol {
   cursor: pointer;
 }
 
+.fa-check {
+  color: var(--royal-blue-dark);
+}
+.servicios p {
+  text-align: end;
+  font-weight: 600;
+}
+
 .telefonos span,
 .email span {
   display: block;
@@ -322,12 +344,37 @@ ol {
 
 .titulo,
 .subtitulo {
-  /* background-color: white; */
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   font-weight: 700;
   color: var(--dark-cornflower-blue);
   text-shadow: 0.1rem 0.1rem 0 var(--dark);
+}
+
+.subtitulo {
+  margin-top: 1.5rem;
+}
+
+.servicios aside {
+  display: none;
+  background-color: var(--usafa-blue);
+  height: 200px;
+  width: 200px;
+  padding: 1.5rem;
+  margin: auto;
+  border-radius: 1rem;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.25rem;
+}
+
+.servicios aside a {
+  color: #fff9;
+}
+
+#staff,
+#cobertura {
+  padding-top: 2rem;
 }
 
 @media screen and (min-width: 30rem) {
@@ -338,8 +385,23 @@ ol {
   .mosaic .mosaic-content .icons-group {
     font-size: 2.5rem;
   }
+
   .mosaic h4 {
     font-size: 1.25rem;
+  }
+
+  .especialidades,
+  .osociales {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    max-height: 100vh;
+  }
+
+  .especialidades .especialidad,
+  .osociales span {
+    width: 50%;
   }
 }
 
@@ -370,6 +432,16 @@ ol {
   .contacto .flex > * {
     width: 45%;
     max-width: 480px;
+  }
+
+  .especialidades,
+  .osociales {
+    max-height: 75vh;
+  }
+
+  .especialidades .especialidad,
+  .osociales span {
+    width: 33.33%;
   }
 
   .home {
@@ -419,7 +491,8 @@ ol {
     padding: 1rem 0.5rem;
   }
 
-  .navbar-menu a:hover {
+  .navbar-menu a:hover,
+  .navbar-menu .active {
     background-color: var(--dark-cornflower-blue);
   }
   .navbar-brand {
@@ -428,6 +501,19 @@ ol {
 
   .navbar-toggle {
     display: none;
+  }
+
+  .servicios {
+    display: flex;
+    justify-content: space-between;
+  }
+  .servicios aside {
+    display: block;
+  }
+
+  .servicios div {
+    padding-right: 2rem;
+    max-width: 48rem;
   }
 }
 
