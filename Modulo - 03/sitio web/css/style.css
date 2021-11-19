@@ -144,7 +144,7 @@ ol {
 }
 
 .especialidad,
-.osociales span {
+.osociales div {
   margin-bottom: 0.5rem;
 }
 
@@ -154,8 +154,7 @@ ol {
   margin: 0 0 0.25rem;
 }
 
-.especialidad span,
-.osociales span {
+.especialidad span {
   display: block;
 }
 
@@ -398,9 +397,12 @@ ol {
     overflow-x: scroll;
     max-height: 100vh;
   }
-
+.osociales{
+  height: 50vh;
+}
   .especialidades .especialidad,
-  .osociales span {
+  .osociales div {
+    padding-right: 1rem;
     width: 50%;
   }
 }
@@ -440,7 +442,7 @@ ol {
   }
 
   .especialidades .especialidad,
-  .osociales span {
+  .osociales div {
     width: 33.33%;
   }
 
